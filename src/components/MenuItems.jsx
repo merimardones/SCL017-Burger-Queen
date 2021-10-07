@@ -39,7 +39,7 @@ export default function MenuItems (props) {
             <img
               src={product.img}
               width="100%"
-              height="150"
+              height="150%"
               className="card-img-top"
               alt="..."
             />

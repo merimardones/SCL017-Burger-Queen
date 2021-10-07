@@ -3,6 +3,9 @@ import data from "../menu.json";
 import MenuItems from "./MenuItems";
 import Ordersummary from "./OrderSummary";
 import "./tableOrders.css";
+import  Container  from "react-bootstrap/Container";
+import  Row  from "react-bootstrap/Row";
+import  Col  from "react-bootstrap/Col";
 
 function TableOrders() {
   const { products } = data;
@@ -42,11 +45,14 @@ function TableOrders() {
 
   return (
     <Fragment>
-      <div className="containerMenuandBill">
-        <div className="containerMenu">
+      <Container>
+      <Row>
+        <Col  xs={6}></Col>
+      <div className="containerMenuandBill"  >
+        <div className="containerMenu"  >
           <MenuItems products={data} onAdd={onAdd} />
         </div>
-        <div className="containerBill">
+        <div className="containerBill" >
           <Ordersummary
             products={data}
             billItems={billItems}
@@ -56,6 +62,9 @@ function TableOrders() {
           />
         </div>
       </div>
+        
+      </Row>
+      </Container>
     </Fragment>
   );
 }
