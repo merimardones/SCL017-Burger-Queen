@@ -22,9 +22,8 @@ export default function Ordersummary(props){
 
 
    return (
-       <Container>
-        <Row>
-        <Col  xs={4}></Col>
+       <div>
+      
     
         <div className = 'billContainer'>  
         <div className='billTitleContainer'> 
@@ -68,8 +67,8 @@ export default function Ordersummary(props){
 
 
     </div>
-    </Row> 
-</Container>
+
+</div>
     )
     };
 
