@@ -5,9 +5,7 @@
 * [1. Variable hamburguesa](#1-intro)
 * [2. Estudio/ UI](#2-estudio)
 * [3. Historia de usuario](#3-historia)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
+
 
 ***
 
