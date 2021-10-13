@@ -1,34 +1,44 @@
 @import url("http://fonts.cdnfonts.com/css/post-no-bills-colombo");
 
-.container-fluid{
+.container-fluid {
   background-color: #dd1438;
-  display: flex;
   width: 100vw;
   height: 100vh;
-  flex-direction: row;
-  flex-wrap: nowrap;
+}
+
+.justify-content-md-center {
+  height: inherit;
   align-items: center;
-  justify-content: center;
 }
 
 .logoContainer {
-  display: flex;
-  flex-direction: row;
-}
-.logo {
-  display: flex;
-  position: relative;
-  width: 90%;
+  text-align: right;
 }
 
-.buttonContainer {
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  gap: 2em;
+.logo {
+  width: 75%;
 }
+
+
+
+.buttonContainer {
+  text-align: -webkit-center;
+  
+  
+}
+  
 
 .btn-outline-light {
   font-family: "Post No Bills Colombo ExtraBold", sans-serif;
-  height: 30%; 
+  height: 30%;
+  
+  
+  
 }
+
+.btn {
+  width: 40%;
+ 
+}
+
+

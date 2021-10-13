@@ -22,10 +22,7 @@ export default function Ordersummary(props){
 
 
    return (
-       <div>
-      
-    
-        <div className = 'billContainer'>  
+       <div className = 'billContainer'>  
         <div className='billTitleContainer'> 
         
             <h1 className= 'billTitle'  xs={2}> RESUMEN DEL PEDIDO </h1>  
@@ -60,7 +57,7 @@ export default function Ordersummary(props){
         </>
     )}
       <div className= 'sendtoKitchen'>
-            <Button onClick={()=>savingDataFirebase(billItems)}  className="botoncocina"  variant="warning">Enviar a cocina</Button>{' '}
+            <Button onClick={()=>savingDataFirebase(billItems)}  className="botoncocina"  variant="warning">Guardar pedido</Button>{' '}
             {console.log(billItems)};
             <Button onClick={()=>resetOrder()} className="botonReset" variant="warning">Tomar otro pedido</Button>{' '}
             </div>
@@ -68,7 +65,7 @@ export default function Ordersummary(props){
 
     </div>
 
-</div>
+
     )
     };
 

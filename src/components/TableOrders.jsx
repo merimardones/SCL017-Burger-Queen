@@ -3,9 +3,7 @@ import data from "../menu.json";
 import MenuItems from "./MenuItems";
 import Ordersummary from "./OrderSummary";
 import "./tableOrders.css";
-import  Container  from "react-bootstrap/Container";
-import  Row  from "react-bootstrap/Row";
-import  Col  from "react-bootstrap/Col";
+import  {Container, Row, Col} from 'react-bootstrap';
 
 function TableOrders() {
   const { products } = data;
@@ -46,24 +44,26 @@ function TableOrders() {
   return (
     <Fragment>
       <Container>
-      <Row>
-        <Col  xs={6}></Col>
-      <div className="containerMenuandBill"  >
-        <div className="containerMenu"  >
-          <MenuItems products={data} onAdd={onAdd} />
-        </div>
-        <div className="containerBill" >
-          <Ordersummary
-            products={data}
-            billItems={billItems}
-            onAdd={onAdd}
-            onRemove={onRemove}
-            resetOrder={resetOrder}
-          />
-        </div>
-      </div>
-        
-      </Row>
+        <Row>
+          <Col md={12} lg={8}>
+            <Row className="containerMenu"  >
+              <MenuItems products={data} onAdd={onAdd} />
+            </Row>
+          </Col>
+          <Col md={12} lg={4} >
+            <Row>
+              <Ordersummary
+                products={data}
+                billItems={billItems}
+                onAdd={onAdd}
+                onRemove={onRemove}
+                resetOrder={resetOrder}
+              />
+            </Row>
+          </Col>
+    
+       
+        </Row>
       </Container>
     </Fragment>
   );
